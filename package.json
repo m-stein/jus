@@ -1,5 +1,5 @@
 {
-    "name": "source",
+    "name": "jus",
     "type": "module",
     "version": "1.0.0",
     "main": "src/index.js",
@@ -12,8 +12,8 @@
     "license": "ISC",
     "description": "Jus is a vanilla JavaScript game engine for 2D games that renders directly\r to an HTML canvas. It aims for providing versatile tools for creating games\r and tries to impose as few framework as possible.",
     "devDependencies": {
-        "@eslint/js": "^9.39.2",
-        "eslint": "^9.39.3",
+        "@eslint/js": "^10.0.1",
+        "eslint": "^10.0.1",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-prettier": "^5.5.5",
         "prettier": "^3.8.1"
