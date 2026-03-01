@@ -33,4 +33,19 @@ declare module 'jus' {
         );
         get data(): any;
     }
+    export class Vector2 {
+        x: number;
+        y: number;
+        constructor(x: number, y: number);
+        distanceTo(other: Vector2): number;
+        copy(): Vector2;
+        equals(other: Vector2): boolean;
+        add(other: Vector2): Vector2;
+        scale(factor: number): Vector2;
+        subtract(other: Vector2): Vector2;
+        length(): number;
+        normalized(): Vector2;
+        toString(): string;
+    }
+    
 }
