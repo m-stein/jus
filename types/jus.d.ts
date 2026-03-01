@@ -1,3 +1,26 @@
+declare module "json_file" {
+    export class JsonFile {
+        /**
+         * @param {Document} htmlDocument
+         * @param {JSON} jsonParser
+         * @param {string} relPath
+         * @param {(file: JsonFile) => void} onLoaded
+         */
+        constructor(htmlDocument: Document, jsonParser: JSON, relPath: string, onLoaded: (file: JsonFile) => void);
+        _relPath: string;
+        _onLoaded: (file: JsonFile) => void;
+        _jsonParser: JSON;
+        _httpRequest: XMLHttpRequest;
+        _url: URL;
+        /**
+         * @type {() => void}
+         * @private
+         */
+        private _onReadyStateChange;
+        _data: any;
+        get data(): any;
+    }
+}
 declare module "object_factory" {
     /**
      * @typedef {{
@@ -33,29 +56,6 @@ declare module "object_factory" {
         context?: Record<string, any>;
     };
     export type BlueprintDict = Record<string, Blueprint>;
-}
-declare module "json_file" {
-    export class JsonFile {
-        /**
-         * @param {Document} htmlDocument
-         * @param {JSON} jsonParser
-         * @param {string} relPath
-         * @param {(file: JsonFile) => void} onLoaded
-         */
-        constructor(htmlDocument: Document, jsonParser: JSON, relPath: string, onLoaded: (file: JsonFile) => void);
-        _relPath: string;
-        _onLoaded: (file: JsonFile) => void;
-        _jsonParser: JSON;
-        _httpRequest: XMLHttpRequest;
-        _url: URL;
-        /**
-         * @type {() => void}
-         * @private
-         */
-        private _onReadyStateChange;
-        _data: any;
-        get data(): any;
-    }
 }
 declare module "vector_2" {
     export class Vector2 {
@@ -109,7 +109,7 @@ declare module "vector_2" {
         toString(): string;
     }
 }
-declare module "index" {
+declare module "jus" {
     export { ObjectFactory } from "./object_factory.js";
     export { JsonFile } from "./json_file.js";
     export { Vector2 } from "./vector_2.js";
