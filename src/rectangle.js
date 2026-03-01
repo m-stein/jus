@@ -1,4 +1,4 @@
-import { Vector2 } from 'jus';
+import { Vector2 } from './rectangle.js';
 
 export class Rectangle {
     /**
