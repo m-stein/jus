@@ -1,12 +1,12 @@
 import fs from 'node:fs';
 
-const file = 'types/jus.d.ts';
+const file = 'types/jet.d.ts';
 
 let text = fs.readFileSync(file, 'utf8');
 
-// Replace "jus/xyz" -> "jus/xyz.js"
-text = text.replace(/("jus\/[^".]+)"/g, '$1.js"');
+// Replace "jet/xyz" -> "jet/xyz.js"
+text = text.replace(/("jet\/[^".]+)"/g, '$1.js"');
 
 fs.writeFileSync(file, text);
 
-console.log('Updated jus module paths to include .js');
+console.log('Updated jet module paths to include .js');

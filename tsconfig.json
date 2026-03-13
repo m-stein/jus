@@ -6,7 +6,7 @@
         "target": "ES2022",
         "declaration": true,
         "emitDeclarationOnly": true,
-        "outFile": "types/jus.d.ts",
+        "outFile": "types/jet.d.ts",
         "rootDir": "src",
     },
     "include": ["src/**/*.js"],

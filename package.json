@@ -1,16 +1,16 @@
 {
-    "name": "jus",
+    "name": "jet",
     "type": "module",
     "version": "1.0.0",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "lint": "eslint .",
-        "buildTypes": "tsc && node scripts/fix_dts_paths.js && prettier --write types/jus.d.ts"
+        "buildTypes": "tsc && node scripts/fix_dts_paths.js && prettier --write types/jet.d.ts"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "description": "Jus is a vanilla JavaScript game engine for 2D games that renders directly\r to an HTML canvas. It aims for providing versatile tools for creating games\r and tries to impose as few framework as possible.",
+    "description": "Jet is a vanilla JavaScript game engine for 2D games that renders directly\r to an HTML canvas. It aims for providing versatile tools for creating games\r and tries to impose as few framework as possible.",
     "devDependencies": {
         "@eslint/js": "^10.0.1",
         "eslint": "^10.0.3",
