@@ -1,5 +1,4 @@
 export class Vector2 {
-    
     /**
      * @param {number} x
      * @param {number} y

@@ -12,7 +12,17 @@ type checking, import checking, and code completion. Just copy the correct
 version of this file to the types/ sub-directory in your project directory and
 make sure to add it to the "include" array in your jsconfig.json file.
 
-## How to update the type declarations file
+## Development
 
-! > npm install -g typescript
+### Initialize for development
+
+! > npm install
+
+### Update the type declarations file before committing changes
+
 ! > tsc
+
+### Check for newer versions of dependencies and set them
+
+! npm install -g npm-check-updates
+! npm-check-updates

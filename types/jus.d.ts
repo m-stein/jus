@@ -1,4 +1,4 @@
-declare module "json_file" {
+declare module "jus/json_file" {
     export class JsonFile {
         /**
          * @param {Document} htmlDocument
@@ -21,7 +21,7 @@ declare module "json_file" {
         get data(): any;
     }
 }
-declare module "object_factory" {
+declare module "jus/object_factory" {
     /**
      * @typedef {{
      *   constructor: new (args: any) => any,
@@ -57,7 +57,7 @@ declare module "object_factory" {
     };
     export type BlueprintDict = Record<string, Blueprint>;
 }
-declare module "vector_2" {
+declare module "jus/vector_2" {
     export class Vector2 {
         /**
          * @param {number} x
@@ -109,7 +109,7 @@ declare module "vector_2" {
         toString(): string;
     }
 }
-declare module "rectangle" {
+declare module "jus/rectangle" {
     export class Rectangle {
         /**
          * @param {Vector2} position
@@ -152,11 +152,5 @@ declare module "rectangle" {
          */
         bottomCenter(): Vector2;
     }
-    import { Vector2 } from "jus";
-}
-declare module "jus" {
-    export { ObjectFactory } from "./object_factory.js";
-    export { JsonFile } from "./json_file.js";
-    export { Vector2 } from "./vector_2.js";
-    export { Rectangle } from "./rectangle.js";
+    import { Vector2 } from "jus/vector_2";
 }
