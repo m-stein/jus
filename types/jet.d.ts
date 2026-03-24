@@ -101,6 +101,11 @@ declare module 'jet/math.js' {
         matrixSize: number,
         numRotations: number
     ): Vector2;
+    /**
+     * @param {number} degrees
+     * @returns {Vector2}
+     */
+    export function angleToUnitVector(degrees: number): Vector2;
     import { Vector2 } from 'jet/vector_2.js';
 }
 declare module 'jet/array.js' {

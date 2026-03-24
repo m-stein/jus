@@ -68,3 +68,14 @@ export function rotateQuadrMatrix2CoordClockwise(
     }
     return rotatedCoord;
 }
+
+/**
+ * @param {number} degrees
+ * @returns {Vector2}
+ */
+export function angleToUnitVector(degrees) {
+    const radians = degrees * (Math.PI / 180);
+    const x = Math.cos(radians);
+    const y = Math.sin(radians);
+    return new Vector2(x, y);
+}
